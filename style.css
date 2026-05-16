@@ -1,0 +1,50 @@
+body{
+  background:#000;
+  color:white;
+  font-family:Arial;
+  margin:0;
+  text-align:center;
+}
+
+header{
+  padding:20px;
+  background:#111;
+}
+
+h1{
+  color:#00ffd5;
+}
+
+.hero{
+  padding:40px 20px;
+}
+
+h2{
+  font-size:45px;
+  color:#00ffd5;
+}
+
+p{
+  font-size:20px;
+}
+
+img{
+  width:90%;
+  max-width:350px;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.botones{
+  margin-top:30px;
+}
+
+button{
+  padding:15px 25px;
+  margin:10px;
+  border:none;
+  border-radius:30px;
+  background:#00ffd5;
+  color:black;
+  font-size:18px;
+}

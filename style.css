@@ -1,7 +1,7 @@
 body{
   margin:0;
-  font-family:Arial;
-  background:#111;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(to bottom, #0a0a0a, #121212);
   color:white;
   text-align:center;
 }
@@ -12,35 +12,41 @@ header{
   background:#000;
 }
 
+header h1{
+  font-size:32px;
+}
+
 /* HERO */
 .hero{
-  padding:40px 20px;
+  padding:50px 20px;
 }
 
 .hero h2{
-  font-size:42px;
+  font-size:46px;
 }
 
 .hero p{
   font-size:20px;
+  opacity:0.8;
 }
 
 .hero img{
   width:90%;
-  max-width:500px;
-  height:auto;
-  border-radius:12px;
+  max-width:520px;
+  border-radius:15px;
+  margin-top:20px;
   object-fit:cover;
 }
 
 /* BOTONES */
 button{
-  padding:12px 18px;
+  padding:14px 22px;
   margin:10px;
   border:none;
-  border-radius:8px;
+  border-radius:10px;
   background:#00ffd5;
   color:black;
+  font-weight:bold;
   cursor:pointer;
   transition:0.3s;
 }
@@ -52,34 +58,38 @@ button:hover{
 /* PLANES */
 .titulo{
   font-size:50px;
-  margin-top:40px;
+  margin-top:60px;
 }
 
 .contenedor-planes{
   display:flex;
   justify-content:center;
-  gap:20px;
   flex-wrap:wrap;
-  padding:30px;
+  gap:20px;
+  padding:20px;
 }
 
 .plan{
-  background:#222;
+  background:#1e1e1e;
   padding:25px;
-  width:260px;
-  border-radius:10px;
-  text-align:center;
-  font-size:18px;
+  width:240px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.plan:hover{
+  transform:translateY(-5px);
 }
 
 .plan h3{
-  font-size:28px;
+  font-size:26px;
 }
 
 .plan p{
-  font-size:22px;
+  font-size:20px;
 }
 
+/* PREMIUM */
 .premium{
   background:gold;
   color:black;
@@ -87,6 +97,6 @@ button:hover{
 
 /* CONTACTO */
 .contacto{
-  padding:40px;
+  padding:50px 20px;
   background:#000;
 }

@@ -29,7 +29,18 @@ nav a{
   text-decoration:none;
   margin:0 12px;
   font-size:18px;
+  font-weight:bold;
   transition:0.3s;
+  opacity:0.8;
+}
+
+nav a:visited{
+  color:white;
+}
+
+nav a:hover{
+  color:#00ffd5;
+  opacity:1;
 }
 
 nav a:hover{
@@ -39,7 +50,7 @@ nav a:hover{
 
 /* HERO */
 .hero{
-  padding:90px 20px;
+  padding:50px 20px;
   animation:aparecer 1s ease;
   background:linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(15,15,15,1));
 }

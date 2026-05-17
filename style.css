@@ -151,4 +151,23 @@ button:hover{
 
 .whatsapp-float:hover{
   transform:scale(1.1);
+}.galeria{
+  padding:60px 20px;
+}
+
+.galeria-grid{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.galeria-grid img{
+  width:300px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.galeria-grid img:hover{
+  transform:scale(1.05);
 }

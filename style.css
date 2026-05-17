@@ -134,4 +134,21 @@ button:hover{
     width:90%;
   }
 
+}.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.4);
+  transition:0.3s;
+  z-index:999;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.1);
 }

@@ -267,9 +267,9 @@ button:hover{
 
 .plan{
   background:#111;
-  padding:35px;
-  margin:30px auto;
-  max-width:320px;
+  padding:25px;
+  margin:25px auto;
+  max-width:300px;
   border-radius:25px;
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
   transition:0.3s;
@@ -280,15 +280,15 @@ button:hover{
 }
 
 .plan h3{
-  font-size:32px;
-  margin-bottom:15px;
+  font-size:24px;
+  margin-bottom:10px;
 }
 
 .precio{
-  font-size:45px;
+  font-size:32px;
   font-weight:bold;
   color:#00ffd5;
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 .plan ul{
@@ -298,8 +298,8 @@ button:hover{
 }
 
 .plan ul li{
-  margin:12px 0;
-  font-size:18px;
+  margin:10px 0;
+  font-size:16px;
   color:#ddd;
 }
 
@@ -307,11 +307,11 @@ button:hover{
   display:inline-block;
   background:#00ffd5;
   color:black;
-  padding:15px 35px;
+  padding:12px 28px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  transition:0.3s;
+  margin-top:15px;
 }
 
 .btn-plan:hover{

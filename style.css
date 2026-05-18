@@ -122,9 +122,9 @@ section h2{
 
 .plan{
   background:#111;
-  padding:25px;
+  padding:35px;
   margin:25px auto;
-  max-width:300px;
+  max-width:380px;
   border-radius:25px;
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
   transition:0.3s;

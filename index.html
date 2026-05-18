@@ -3,22 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>FITZONE</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link 
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
 <header>
-
   <h1>FITZONE</h1>
 
   <nav>
@@ -27,87 +19,121 @@
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
   </nav>
-
 </header>
 
+<!-- HERO -->
+
 <section class="hero" id="inicio">
+
   <h2>TRANSFORMA TU CUERPO</h2>
-  <p>Gimnasio premium con entrenadores profesionales</p>
 
-  <img src="gym.jpg" alt="Gym">
+  <p>
+    Gimnasio premium con entrenadores profesionales
+  </p>
 
-  <div class="botones">
-    <button onclick="document.getElementById('planes').scrollIntoView({behavior:'smooth'})">
+  <img src="gym1.jpg" alt="Gimnasio">
+
+  <div class="hero-buttons">
+
+    <a href="#planes" class="btn">
       Ver Planes
-    </button>
+    </a>
 
-    <button onclick="window.open('https://wa.me/5493764205306','_blank')">
+    <a href="#" class="btn">
       WhatsApp
-    </button>
+    </a>
+
   </div>
+
 </section>
+
+<!-- PLANES -->
 
 <section id="planes">
 
-<div class="planes-container">
+  <h2>Planes</h2>
 
-  <div class="plan">
-  ...
-  </div>
+  <div class="planes-container">
 
-  <div class="plan">
-  ...
-  </div>
+    <!-- PLAN 1 -->
 
-</div>
+    <div class="plan">
 
-</section>
-    
-    <h3>PLAN BÁSICO</h3>
-    <p class="precio">$20.000</p>
-    ...
-  </div>
-      <li> Musculación</li>
-      <li> Cardio</li>
-      <li> Rutinas básicas</li>
-    </ul>
+      <h3>PLAN BÁSICO</h3>
 
-    <a href="#" class="btn-plan">EMPEZAR</a>
-  </div>
+      <p class="precio">$20.000</p>
 
-  <div class="plan">
-    <h3>PLAN PRO</h3>
-    <p class="precio">$40.000</p>
+      <ul>
+        <li>Musculación</li>
+        <li>Cardio</li>
+        <li>Rutinas básicas</li>
+      </ul>
 
-    <ul>
-      <li> Entrenador personal</li>
-      <li> Cardio premium</li>
-      <li> Duchas</li>
-      <li> Rutinas avanzadas</li>
-    </ul>
+      <a href="#" class="btn-plan">
+        EMPEZAR
+      </a>
 
-    <a href="#" class="btn-plan">EMPEZAR</a>
-  </div>
+    </div>
 
-</section>
-<section class="galeria" id="galeria">
+    <!-- PLAN 2 -->
 
-  <h2 class="titulo">GALERÍA</h2>
+    <div class="plan">
 
-  <div class="galeria-grid">
+      <h3>PLAN PRO</h3>
 
-    <img src="gym.jpg">
-    <img src="gym2.jpg">
-    <img src="gym3.jpg">
+      <p class="precio">$40.000</p>
+
+      <ul>
+        <li>Entrenador personal</li>
+        <li>Dieta personalizada</li>
+        <li>Acceso total</li>
+      </ul>
+
+      <a href="#" class="btn-plan">
+        EMPEZAR
+      </a>
+
+    </div>
 
   </div>
 
 </section>
-<section class="contacto" id="contacto">
+
+<!-- GALERÍA -->
+
+<section id="galeria">
+
+  <h2>GALERÍA</h2>
+
+  <div class="galeria">
+
+    <img src="gym1.jpg" alt="">
+    <img src="gym2.jpg" alt="">
+    <img src="gym3.jpg" alt="">
+
+  </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto">
+
   <h2>CONTACTO</h2>
 
-  <button onclick="window.open('https://wa.me/549XXXXXXXXXX','_blank')">
-    Hablar por WhatsApp
-  </button>
+  <p>📍 Garupá, Misiones</p>
+
+  <p>📞 +54 9 3764 000000</p>
+
+</section>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="#" class="whatsapp-float">
+  WhatsApp
+</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>

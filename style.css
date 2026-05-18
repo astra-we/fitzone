@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
   margin:0;
   padding:0;
@@ -11,12 +13,13 @@ body{
   color:white;
   font-family:Arial, sans-serif;
   text-align:center;
+  overflow-x:hidden;
 }
 
 /* HEADER */
 
 header{
-  padding:30px 20px;
+  padding:25px 20px;
   background:#000;
   position:sticky;
   top:0;
@@ -24,8 +27,8 @@ header{
 }
 
 header h1{
-  font-size:60px;
-  margin-bottom:20px;
+  font-size:48px;
+  margin-bottom:15px;
   letter-spacing:3px;
 }
 
@@ -35,13 +38,13 @@ nav{
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:25px;
+  gap:20px;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  font-size:18px;
+  font-size:17px;
   font-weight:bold;
   transition:0.3s;
 }
@@ -53,25 +56,25 @@ nav a:hover{
 /* HERO */
 
 .hero{
-  padding:40px 20px;
+  padding:50px 20px;
 }
 
 .hero h2{
-  font-size:65px;
-  margin-bottom:25px;
+  font-size:52px;
+  margin-bottom:20px;
 }
 
 .hero p{
-  font-size:22px;
+  font-size:20px;
   color:#ccc;
-  margin-bottom:40px;
+  margin-bottom:35px;
 }
 
 .hero img{
   width:100%;
-  max-width:650px;
-  border-radius:35px;
-  margin-bottom:30px;
+  max-width:900px;
+  border-radius:30px;
+  margin-bottom:35px;
   box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -87,17 +90,18 @@ nav a:hover{
 .btn{
   background:#00ffd5;
   color:black;
-  padding:18px 35px;
+  padding:15px 32px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  font-size:20px;
+  font-size:18px;
   transition:0.3s;
+  box-shadow:0 0 20px rgba(0,255,213,0.5);
 }
 
 .btn:hover{
   transform:scale(1.08);
-  box-shadow:0 0 25px rgba(0,255,213,0.8);
+  box-shadow:0 0 30px rgba(0,255,213,0.9);
 }
 
 /* SECCIONES */
@@ -107,7 +111,7 @@ section{
 }
 
 section h2{
-  font-size:55px;
+  font-size:45px;
   margin-bottom:50px;
 }
 
@@ -116,16 +120,17 @@ section h2{
 .planes-container{
   display:flex;
   justify-content:center;
-  gap:30px;
+  align-items:stretch;
+  gap:35px;
   flex-wrap:wrap;
 }
 
 .plan{
   background:#111;
   padding:35px;
-  margin:25px auto;
+  width:100%;
   max-width:380px;
-  border-radius:25px;
+  border-radius:30px;
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
   transition:0.3s;
 }
@@ -135,39 +140,37 @@ section h2{
 }
 
 .plan h3{
-  font-size:24px;
-  margin-bottom:10px;
+  font-size:28px;
+  margin-bottom:15px;
 }
 
 .precio{
-  font-size:32px;
+  font-size:42px;
   font-weight:bold;
   color:#00ffd5;
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
 .plan ul{
   list-style:none;
-  margin-bottom:20px;
+  padding:0;
+  margin-bottom:30px;
 }
 
 .plan ul li{
-  margin:10px 0;
-  font-size:16px;
+  margin:12px 0;
+  font-size:18px;
   color:#ddd;
 }
-
-/* BOTÓN PLAN */
 
 .btn-plan{
   display:inline-block;
   background:#00ffd5;
   color:black;
-  padding:12px 28px;
+  padding:14px 32px;
   border-radius:50px;
   text-decoration:none;
   font-weight:bold;
-  margin-top:15px;
   box-shadow:0 0 20px rgba(0,255,213,0.5);
   transition:0.3s;
 }
@@ -188,8 +191,10 @@ section h2{
 
 .galeria img{
   width:100%;
-  max-width:350px;
-  border-radius:30px;
+  max-width:320px;
+  height:220px;
+  object-fit:cover;
+  border-radius:25px;
   transition:0.3s;
   box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
@@ -201,12 +206,12 @@ section h2{
 /* CONTACTO */
 
 #contacto p{
-  font-size:22px;
+  font-size:20px;
   margin:15px 0;
   color:#ccc;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 
 .whatsapp-float{
   position:fixed;
@@ -231,7 +236,8 @@ section h2{
 
 .hero,
 .plan,
-.contacto{
+#galeria,
+#contacto{
   animation:aparecer 1s ease;
 }
 
@@ -254,30 +260,31 @@ section h2{
 @media(max-width:768px){
 
   header h1{
-    font-size:42px;
+    font-size:38px;
   }
 
   .hero h2{
-    font-size:48px;
+    font-size:40px;
   }
 
   section h2{
-    font-size:42px;
+    font-size:34px;
   }
 
   .hero p{
     font-size:18px;
   }
 
-  nav{
-    gap:15px;
+  .plan{
+    max-width:100%;
   }
 
-  nav a{
-    font-size:16px;
+  .precio{
+    font-size:36px;
   }
 
-  .btn{
-    padding:15px 28px;
-    font-size:18px;
+  .plan h3{
+    font-size:24px;
   }
+
+}

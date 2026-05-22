@@ -1,210 +1,147 @@
-/* BOTONES HERO */
-
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+html{
+  scroll-behavior:smooth;
 }
 
-.btn{
-  background:#00ffd5;
-  color:black;
-  padding:15px 32px;
-  border-radius:50px;
+body{
+
+  background:
+  linear-gradient(
+  to bottom,
+  #050505,
+  #0f0f0f,
+  #161616
+  );
+
+  color:white;
+
+  font-family:'Poppins', sans-serif;
+
+  text-align:center;
+
+  margin:0;
+
+  padding:0;
+
+  min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+
+  position:sticky;
+  top:0;
+
+  background:rgba(0,0,0,0.85);
+
+  backdrop-filter:blur(10px);
+
+  padding:20px;
+
+  z-index:1000;
+
+  border-bottom:1px solid rgba(0,255,136,0.2);
+}
+
+h1{
+
+  color:#00ff88;
+
+  font-size:50px;
+
+  text-shadow:0 0 25px rgba(0,255,136,0.3);
+
+  margin:0;
+}
+
+/* NAVBAR */
+
+nav{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+  margin-top:15px;
+}
+
+nav a{
+
+  color:white;
+
   text-decoration:none;
+
   font-weight:bold;
-  font-size:18px;
+
+  letter-spacing:1px;
+
   transition:0.3s;
-  box-shadow:0 0 20px rgba(0,255,213,0.5);
+}
+
+nav a:hover{
+  color:#00ff88;
+}
+
+/* HERO */
+
+.hero{
+  padding:50px 20px;
+}
+
+.hero h2{
+  font-size:52px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:20px;
+  color:#ccc;
+  margin-bottom:35px;
+}
+
+.hero img{
+
+  width:90%;
+
+  max-width:900px;
+
+  border-radius:30px;
+
+  margin-bottom:35px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* BOTON */
+
+.btn{
+
+  display:inline-block;
+
+  padding:15px 35px;
+
+  background:#00ff88;
+
+  color:black;
+
+  text-decoration:none;
+
+  font-weight:bold;
+
+  border-radius:15px;
+
+  transition:0.3s;
+
+  box-shadow:0 0 20px rgba(0,255,136,0.4);
 }
 
 .btn:hover{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(0,255,213,0.9);
-}
 
-/* SECCIONES */
-
-section{
-  padding:80px 20px;
-}
-
-section h2{
-  font-size:45px;
-  margin-bottom:50px;
-}
-
-/* PLANES */
-
-.planes-container{
-  display:flex;
-  justify-content:center;
-  align-items:stretch;
-  gap:35px;
-  flex-wrap:wrap;
-}
-
-.plan{
-  background:#111;
-  padding:35px;
-  width:100%;
-  max-width:380px;
-  border-radius:30px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.5);
-  transition:0.3s;
-}
-
-.plan:hover{
-  transform:translateY(-10px);
-}
-
-.plan h3{
-  font-size:28px;
-  margin-bottom:15px;
-}
-
-.precio{
-  font-size:42px;
-  font-weight:bold;
-  color:#00ffd5;
-  margin-bottom:25px;
-}
-
-.plan ul{
-  list-style:none;
-  padding:0;
-  margin-bottom:30px;
-}
-
-.plan ul li{
-  margin:12px 0;
-  font-size:18px;
-  color:#ddd;
-}
-
-.btn-plan{
-  display:inline-block;
-  background:#00ffd5;
-  color:black;
-  padding:14px 32px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  box-shadow:0 0 20px rgba(0,255,213,0.5);
-  transition:0.3s;
-}
-
-.btn-plan:hover{
-  transform:scale(1.08);
-  box-shadow:0 0 30px rgba(0,255,213,0.9);
-}
-
-/* GALERÍA */
-
-.galeria{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  flex-wrap:wrap;
-}
-
-.galeria img{
-  width:100%;
-  max-width:320px;
-  height:220px;
-  object-fit:cover;
-  border-radius:25px;
-  transition:0.3s;
-  box-shadow:0 10px 25px rgba(0,0,0,0.5);
-}
-
-.galeria img:hover{
   transform:scale(1.05);
+
+  box-shadow:0 0 30px rgba(0,255,136,0.6);
 }
-
-/* CONTACTO */
-
-#contacto p{
-  font-size:20px;
-  margin:15px 0;
-  color:#ccc;
-}
-
-/* WHATSAPP */
-
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25d366;
-  color:white;
-  padding:15px 20px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  box-shadow:0 5px 15px rgba(0,0,0,0.4);
-  transition:0.3s;
-  z-index:999;
-}
-
-.whatsapp-float:hover{
-  transform:scale(1.1);
-}
-
-/* ANIMACIONES */
-
-.hero,
-.plan,
-#galeria,
-#contacto{
-  animation:aparecer 1s ease;
-}
-
-@keyframes aparecer{
-
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-  header h1{
-    font-size:38px;
-  }
-
-  .hero h2{
-    font-size:40px;
-  }
-
-  section h2{
-    font-size:34px;
-  }
-
-  .hero p{
-    font-size:18px;
-  }
-
-  .plan{
-    max-width:100%;
-  }
-
-  .precio{
-    font-size:36px;
-  }
-
-  .plan h3{
-    font-size:24px;
-  }
-
-  }

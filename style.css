@@ -99,6 +99,14 @@ nav a:hover{
   margin-bottom:20px;
 }
 
+@media(max-width:768px){
+
+  .hero h2{
+    font-size:48px;
+  }
+
+}
+
 .hero p{
 
   font-size:22px;

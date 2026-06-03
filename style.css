@@ -319,3 +319,55 @@ nav a:hover{
 
   box-shadow:0 0 35px rgba(0,255,136,0.8);
 }
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  padding:70px 20px;
+}
+
+.stat{
+  background:rgba(255,255,255,.05);
+  padding:25px;
+  border-radius:20px;
+  min-width:180px;
+  border:1px solid rgba(0,255,136,.2);
+}
+
+.stat h3{
+  color:#00ff88;
+  font-size:2rem;
+}
+
+.pro{
+  border:2px solid #00ff88;
+  transform:scale(1.05);
+}
+
+.pro:hover{
+  transform:scale(1.08);
+}
+
+.testimonios{
+  padding:80px 20px;
+}
+
+.testimonios h2{
+  color:#00ff88;
+  font-size:50px;
+  margin-bottom:50px;
+}
+
+.cta{
+  padding:100px 20px;
+}
+
+.cta h2{
+  font-size:50px;
+  color:#00ff88;
+}
+
+.cta p{
+  margin-bottom:40px;
+}

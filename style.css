@@ -23,8 +23,6 @@ body{
   padding:0;
 }
 
-/* HEADER */
-
 header{
 
   position:sticky;
@@ -52,8 +50,6 @@ h1{
 
   text-shadow:0 0 25px rgba(0,255,136,0.4);
 }
-
-/* NAV */
 
 nav{
 
@@ -84,8 +80,6 @@ nav a{
 nav a:hover{
   color:#00ff88;
 }
-
-/* HERO */
 
 .hero{
 
@@ -129,8 +123,6 @@ nav a:hover{
   margin-bottom:40px;
 }
 
-/* BOTON */
-
 .btn{
 
   display:inline-block;
@@ -158,8 +150,6 @@ nav a:hover{
 
   box-shadow:0 0 35px rgba(0,255,136,0.8);
 }
-
-/* PLANES */
 
 .planes{
 
@@ -319,6 +309,7 @@ nav a:hover{
 
   box-shadow:0 0 35px rgba(0,255,136,0.8);
 }
+
 .stats{
   display:flex;
   justify-content:center;
@@ -328,32 +319,35 @@ nav a:hover{
 }
 
 .stat{
-  background:rgba(255,255,255,.05);
-  padding:25px;
-  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(0,255,136,0.2);
+  border-radius:25px;
+  padding:30px;
   min-width:180px;
-  border:1px solid rgba(0,255,136,.2);
+  backdrop-filter:blur(10px);
+  transition:.3s;
+}
+
+.stat:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 25px rgba(0,255,136,0.3);
 }
 
 .stat h3{
   color:#00ff88;
-  font-size:2rem;
+  font-size:2.2rem;
+  margin-bottom:10px;
 }
 
-.pro{
-  border:2px solid #00ff88;
-  transform:scale(1.05);
+.stat p{
+  color:#ccc;
 }
 
-.pro:hover{
-  transform:scale(1.08);
-}
-
-.testimonios{
+.servicios{
   padding:80px 20px;
 }
 
-.testimonios h2{
+.servicios h2{
   color:#00ff88;
   font-size:50px;
   margin-bottom:50px;
@@ -361,13 +355,61 @@ nav a:hover{
 
 .cta{
   padding:100px 20px;
+  margin:80px 20px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(0,255,136,0.2);
+  border-radius:30px;
+  backdrop-filter:blur(10px);
 }
 
 .cta h2{
-  font-size:50px;
+  font-size:48px;
   color:#00ff88;
+  margin-bottom:20px;
 }
 
 .cta p{
-  margin-bottom:40px;
+  font-size:20px;
+  color:#ccc;
+  margin-bottom:35px;
+}
+
+.card,
+.stat{
+  animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .stats{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .cta h2{
+    font-size:34px;
+  }
+
+  .cta p{
+    font-size:18px;
+  }
+
+  .servicios h2{
+    font-size:38px;
+  }
+
 }

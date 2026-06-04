@@ -127,28 +127,28 @@ nav a:hover{
 
   display:inline-block;
 
-  padding:18px 40px;
-
   background:#00ff88;
 
   color:black;
 
+  padding:15px 35px;
+
+  border-radius:15px;
+
   text-decoration:none;
 
-  font-weight:bold;
+  font-weight:700;
 
-  border-radius:18px;
+  transition:.3s;
 
-  transition:0.3s;
-
-  box-shadow:0 0 25px rgba(0,255,136,0.5);
+  box-shadow:0 0 25px rgba(0,255,136,.3);
 }
 
 .btn:hover{
 
   transform:scale(1.05);
 
-  box-shadow:0 0 35px rgba(0,255,136,0.8);
+  box-shadow:0 0 40px rgba(0,255,136,.5);
 }
 
 .planes{
@@ -166,42 +166,42 @@ nav a:hover{
 }
 
 .cards{
-
   display:flex;
-
   justify-content:center;
-
+  align-items:stretch;
   gap:30px;
-
   flex-wrap:wrap;
+  padding:20px;
 }
 
 .card{
 
-  width:280px;
+  width:320px;
 
   background:rgba(255,255,255,0.05);
 
-  border:1px solid rgba(0,255,136,0.2);
+  border:1px solid rgba(0,255,150,.25);
 
   border-radius:25px;
 
-  padding:40px 25px;
+  padding:30px;
+
+  box-sizing:border-box;
 
   backdrop-filter:blur(10px);
 
-  transition:0.3s;
+  transition:.3s;
 
-  box-shadow:0 0 25px rgba(0,0,0,0.5);
+  box-shadow:0 0 20px rgba(0,255,150,.08);
+
+  overflow:hidden;
 }
 
 .card:hover{
 
-  transform:translateY(-10px);
+  transform:translateY(-8px);
 
-  border-color:#00ff88;
-
-  box-shadow:0 0 30px rgba(0,255,136,0.4);
+  box-shadow:0 0 35px rgba(0,255,150,.25);
 }
 
 .card h3{
@@ -213,13 +213,13 @@ nav a:hover{
 
 .precio{
 
-  font-size:45px;
+  font-size:2rem;
+
+  font-weight:700;
 
   color:#00ff88;
 
-  font-weight:bold;
-
-  margin-bottom:20px;
+  margin:20px 0;
 }
 
 .card p{
@@ -270,21 +270,24 @@ nav a:hover{
   transform:scale(1.05);
 
   box-shadow:0 0 30px rgba(0,255,136,0.4);
-}.whatsapp{
+}
+.whatsapp{
 
   position:fixed;
 
-  bottom:20px;
+  bottom:15px;
 
-  right:20px;
+  right:15px;
 
-  padding:15px 20px;
+  width:55px;
+
+  height:55px;
 
   background:#00ff88;
 
   color:black;
 
-  border-radius:15px;
+  border-radius:50%;
 
   display:flex;
 
@@ -292,7 +295,7 @@ nav a:hover{
 
   align-items:center;
 
-  font-size:30px;
+  font-size:28px;
 
   text-decoration:none;
 
@@ -307,7 +310,7 @@ nav a:hover{
 
   transform:scale(1.1);
 
-  box-shadow:0 0 35px rgba(0,255,136,0.8);
+  box-shadow:0 0 35px rgba(0,255,136,0.7);
 }
 
 .stats{
@@ -461,4 +464,50 @@ nav a:hover{
 .destacado{
   border:2px solid #00ff88;
   box-shadow:0 0 15px rgba(0,255,136,.25);
+}
+
+.beneficios{
+
+  list-style:none;
+
+  padding:0;
+
+  margin:25px 0;
+}
+
+.beneficios li{
+
+  margin:12px 0;
+
+  color:#d8d8d8;
+
+  font-size:1.1rem;
+}
+.cta{
+
+  padding:100px 20px;
+
+  background:linear-gradient(
+    135deg,
+    rgba(0,255,136,.08),
+    transparent
+  );
+}
+
+.cta h2{
+
+  font-size:3rem;
+
+  color:#00ff88;
+
+  margin-bottom:20px;
+}
+
+.cta p{
+
+  color:#ccc;
+
+  font-size:1.2rem;
+
+  margin-bottom:35px;
 }

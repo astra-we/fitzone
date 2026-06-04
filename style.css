@@ -418,3 +418,13 @@ nav a:hover{
   border:2px solid #00ff88;
   transform:scale(1.05);
 }
+
+.testimonios{
+  padding:80px 20px;
+}
+
+.testimonios h2{
+  color:#00ff88;
+  font-size:50px;
+  margin-bottom:50px;
+}

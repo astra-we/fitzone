@@ -451,3 +451,9 @@ nav a:hover{
   color:#00ff88;
   margin-top:20px;
 }
+
+.precio span{
+  font-size:18px;
+  color:#ccc;
+  font-weight:400;
+}

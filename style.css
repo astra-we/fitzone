@@ -413,3 +413,8 @@ nav a:hover{
   }
 
 }
+
+.card:nth-child(2){
+  border:2px solid #00ff88;
+  transform:scale(1.05);
+}
